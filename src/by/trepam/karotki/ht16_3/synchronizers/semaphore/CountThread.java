@@ -1,4 +1,4 @@
-package by.trepam.karotki.ht16_3.locks.semaphore;
+package by.trepam.karotki.ht16_3.synchronizers.semaphore;
 
 import java.util.concurrent.Semaphore;
 

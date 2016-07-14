@@ -1,4 +1,4 @@
-package by.trepam.karotki.ht16_3.locks.phaser;
+package by.trepam.karotki.ht16_3.synchronizers.phaser;
 
 import java.util.concurrent.Phaser;
 

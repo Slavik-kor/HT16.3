@@ -1,4 +1,4 @@
-package by.trepam.karotki.ht16_3.locks.exhanger;
+package by.trepam.karotki.ht16_3.synchronizers.exchanger;
 
 import java.util.concurrent.Exchanger;
 
