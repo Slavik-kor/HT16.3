@@ -10,24 +10,24 @@ public class CDLThread implements Runnable {
 	private CountDownLatch cdl;
 	private String name;
 	private int duration;
-	
-	public CDLThread(String name, CountDownLatch cdl,int duration){
+
+	public CDLThread(String name, CountDownLatch cdl, int duration) {
 		this.name = name;
 		this.cdl = cdl;
 		this.duration = duration;
 	}
-	
+
 	@Override
 	public void run() {
-		
-		System.out.println("Thread "+name+" is performing...");
-		try{
+
+		System.out.println("Thread " + name + " is performing...");
+		try {
 			Thread.sleep(duration);
-		}catch(InterruptedException e){
-			LOG.warn("Thread "+name+" is inurrupted");
+		} catch (InterruptedException e) {
+			LOG.warn("Thread " + name + " is inurrupted");
 		}
-		cdl.countDown();
-		System.out.println("Thread "+name+" is stoping...");
+		cdl.countDown(); // уменьшает счетчик CountDownLatch на единицу
+		System.out.println("Thread " + name + " is stoping...");
 	}
 
 }
